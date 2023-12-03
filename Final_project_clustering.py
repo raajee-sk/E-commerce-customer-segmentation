@@ -71,6 +71,7 @@ if c:
     sample=[[int(Gender),int(Orders),int(Jordan),int(Gatorade),int(Samsung),int(Asus),int(Udis),int(Mondelez_International),int(Wrangler),int(Vans),int(Fila),int(Brooks),int(Hm),int(Dairy_Queen),int(Fendi),int(Hewlett_Packard),int(Pladis),int(Asics),int(Siemens),int(Jm),int(Pop_Chips),int(Juniper),int(Huawei),int(Compaq),int(Ibm),int(Burberry),int(Mi),int(Lg),int(Dior),int(Scabal),int(Tommy_Hilfiger),int(Hollister),int(Forever_21),int(Colavita),int(Microsoft),int(Jiffy_mix),int(Kraft)]]
     array=np.array(sample)
     result=plc.predict(array)
+    
     if result==0:
        st.markdown(
     f"<h1 style='color:#ff6666; font-size: 24px;'>This Customer Belongs To Cluster 0.</h1>",
